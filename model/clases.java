@@ -48,18 +48,23 @@ public class clases {
 
     class fisico {
     
-       
+       void accionfis(){
+           System.out.println("blande su arma");
+       }
         
     }
+
     class magico {
     
-       
+       void accionmagi() {
+           System.out.println("prepara su hechizo");
+       }
         
     }
 
     class guerrero extends fisico {
     
-    
+        
 
     }
 

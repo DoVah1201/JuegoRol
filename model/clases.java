@@ -1,6 +1,6 @@
 package model;
 
-abstract class perso {
+abstract class personaje {
 
     protected String nombre;
     protected int nivel;

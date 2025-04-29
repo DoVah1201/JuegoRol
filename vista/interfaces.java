@@ -1,4 +1,4 @@
-package model;
+package vista;
 
 public class interfaces {
     

@@ -8,6 +8,10 @@ abstract class personaje {
 
     abstract void atacar();
 
+    public animal (String nombre, int nivel, int salud) {
+        
+
+    }
 
     public String getNombre() {
         return nombre;

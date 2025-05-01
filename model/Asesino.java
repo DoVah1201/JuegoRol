@@ -1,4 +1,5 @@
-import model.CombateFisico;
+package model;
+
 
 public class Asesino extends CombateFisico {
     

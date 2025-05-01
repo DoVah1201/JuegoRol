@@ -1,7 +1,4 @@
-import model.HabilidadesMagicas;
-import model.interfaces;
-
-
+package model;
 
 public class Hechicero extends HabilidadesMagicas implements interfaces.Magico, interfaces.Defender {
     

@@ -1,7 +1,7 @@
 import model.HabilidadesMagicas;
 import model.interfaces;
 
-import java.security.Permission;
+
 
 public class Hechicero extends HabilidadesMagicas implements interfaces.Magico, interfaces.Defender {
     

@@ -2,21 +2,21 @@ package model;
 
 public class Arquero extends CombateFisico implements interfaces.Moverse, interfaces.Volar {
     
-    int habilidad;
+    int agilidad;
     int numFlechas;
     
-    public Arquero(String nombre, int nivel, int salud, int habilidad, int numFlechas) {
+    public Arquero(String nombre, int nivel, int salud, int agilidad, int numFlechas) {
         super(nombre, nivel, salud);
-        this.habilidad = habilidad;
+        this.agilidad = agilidad;
         this.numFlechas = numFlechas;
     }
 
-    public int getHabilidad() {
-        return habilidad;
+    public int getAgilidad() {
+        return agilidad;
     }
 
-    public void setHabilidad(int habilidad) {
-        this.habilidad = habilidad;
+    public void setAgilidad(int agilidad) {
+        this.agilidad = agilidad;
     }
 
     public int getNumFlechas() {
@@ -37,14 +37,14 @@ public class Arquero extends CombateFisico implements interfaces.Moverse, interf
 
     @Override
     public String toString() {
-        return "Arquero [habilidad=" + habilidad + ", numFlechas=" + numFlechas + "]";
+        return "Arquero [agilidad=" + agilidad + ", numFlechas=" + numFlechas + "]";
     }
 
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = super.hashCode();
-        result = prime * result + habilidad;
+        result = prime * result + agilidad;
         result = prime * result + numFlechas;
         return result;
     }
@@ -58,7 +58,7 @@ public class Arquero extends CombateFisico implements interfaces.Moverse, interf
         if (getClass() != obj.getClass())
             return false;
         Arquero other = (Arquero) obj;
-        if (habilidad != other.habilidad)
+        if (agilidad != other.agilidad)
             return false;
         if (numFlechas != other.numFlechas)
             return false;

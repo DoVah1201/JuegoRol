@@ -1,6 +1,6 @@
 package model;
 
-abstract class Personaje {
+public abstract class Personaje {
 
     private String nombre;
     private int nivel;

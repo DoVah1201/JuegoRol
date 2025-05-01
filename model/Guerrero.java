@@ -1,6 +1,6 @@
 package model;
 
-public class Guerrero extends CombateFisico {
+public class Guerrero extends CombateFisico implements interfaces.Defender {
     
     private int fuerza;
     private int armadura;
@@ -77,4 +77,9 @@ public class Guerrero extends CombateFisico {
             return false;
         return true;
     }
+
+    public void Defendible() {
+        System.out.println("Se defendio con exito!!");
+    }
+
 }

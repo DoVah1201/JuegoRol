@@ -1,6 +1,6 @@
 package model;
 
-public class Arquero extends CombateFisico implements interfaces.Moverse, interfaces.Curar {
+public class Arquero extends CombateFisico implements interfaces.Moverse, interfaces.Volar {
     
     int habilidad;
     int numFlechas;
@@ -66,8 +66,8 @@ public class Arquero extends CombateFisico implements interfaces.Moverse, interf
     }
 
     @Override
-    public void Curable() {
-        System.out.println("Se curo con exito");
+    public void VolarAlto() {
+        System.out.println("Alzo el vuelo sin problemas");
     }
 
     @Override

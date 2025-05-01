@@ -6,7 +6,7 @@ public class interfaces {
     }
 
     public interface Volar(){
-        void Volar();
+        void VolarAlto();
     }
 
     public interface Magico(){

@@ -1,6 +1,6 @@
 package model;
 
-public class Mago extends HabilidadesMagicas {
+public class Mago extends HabilidadesMagicas implements interfaces.Magico, interfaces.Curar {
     
     private int mana;
     private int sabiduria;
@@ -65,5 +65,13 @@ public class Mago extends HabilidadesMagicas {
         return true;
     }
 
-    
+    @Override
+    public void Curable() {
+        System.out.println("Se curo con exito");
+    }
+
+    @Override
+    public void LanzarHechizos() {
+        System.out.println("lanzo su poderoso hechizo");
+    }
 }

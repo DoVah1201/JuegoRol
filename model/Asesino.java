@@ -1,7 +1,7 @@
 package model;
 
 
-public class Asesino extends CombateFisico {
+public class Asesino extends CombateFisico implements interfaces.Moverse,interfaces.Curar {
     
     int siglo;
     int critico;
@@ -66,5 +66,13 @@ public class Asesino extends CombateFisico {
         return true;
     }
 
-    
+    @Override
+    public void Movilizable() {
+        System.out.println("Se movilizo al punto deseado");
+    }
+
+    @Override
+    public void Curable() {
+        System.out.println("Se curo con exito");
+    }
 }

@@ -1,6 +1,6 @@
 import java.security.Permission;
 
-public class Hechicero extends Personaje implements Magico, Defender {
+public class Hechicero extends Personaje {
     
     int mana;
     int concentracion;

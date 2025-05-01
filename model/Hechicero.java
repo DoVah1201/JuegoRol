@@ -1,6 +1,9 @@
+import model.HabilidadesMagicas;
+import model.interfaces;
+
 import java.security.Permission;
 
-public class Hechicero extends Personaje implements Magico, Defender {
+public class Hechicero extends HabilidadesMagicas implements interfaces.Magico, interfaces.Defender {
     
     int mana;
     int concentracion;
@@ -65,5 +68,13 @@ public class Hechicero extends Personaje implements Magico, Defender {
         return true;
     }
 
-    
+    @Override
+    public void LanzarHechizos() {
+        System.out.println("lanzo su poderoso hechizo");
+    }
+
+    @Override
+    public void Defendible() {
+        System.out.println("Se defendio con exito!!");
+    }
 }

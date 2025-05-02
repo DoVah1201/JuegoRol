@@ -1,23 +1,23 @@
 package model;
 
 public class interfaces {
-    public interface Curar(){
+    public interface Curar {
         void Curable();
     }
 
-    public interface Volar(){
+    public interface Volar{
         void VolarAlto();
     }
 
-    public interface Magico(){
+    public interface Magico{
         void LanzarHechizos();
     }
 
-    public interface Defender(){
+    public interface Defender{
         void Defendible();
     }
 
-    public interface Moverse(){
+    public interface Moverse{
         void Movilizable();
     }
 }

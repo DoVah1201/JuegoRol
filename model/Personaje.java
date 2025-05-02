@@ -34,7 +34,7 @@ public abstract class Personaje {
         this.salud = salud;
     }
 
-    abstract void atacar();
+    public abstract void atacar();
 
     @Override
     public String toString() {

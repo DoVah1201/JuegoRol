@@ -5,15 +5,16 @@ import java.util.ArrayList;
 
 public class juego {
 
-    public ArrayList<Personaje> personajes = new ArrayList<>();
+    public static ArrayList<Personaje> personajes = new ArrayList<>();
 
-    public void agregarPersonaje(Personaje p) {
+    public static void agregarPersonaje(Personaje p) {
         personajes.add(p);
     }
 
-    public void mostrarAcciones() {
+    public static void mostrarAcciones() {
         for (Personaje p : personajes) {
             System.out.println("" + p);
+            System.out.println("===========================================");
             p.atacar();
 
             if (p instanceof interfaces.Curar) ((interfaces.Curar) p).Curable();
@@ -23,4 +24,6 @@ public class juego {
             if (p instanceof interfaces.Moverse) ((interfaces.Moverse) p).Movilizable();
         }
     }
+
+
 }

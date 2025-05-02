@@ -13,6 +13,7 @@ public class juego {
 
     public static void mostrarAcciones() {
         for (Personaje p : personajes) {
+            System.out.println("===========================================");
             System.out.println("" + p);
             System.out.println("===========================================");
             p.atacar();
